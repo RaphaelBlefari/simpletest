@@ -8,7 +8,7 @@ node {
     
     // configura o nome da aplicação, o endereço do repositório e o nome da imagem com a versão
     appName = "app"
-    registryHost = "registry:5000/"
+    registryHost = "${REGISTRY_SERVICE_HOST}:5000/"
     imageName = "${registryHost}${appName}:${tag}"
     
     // Configuramos os estágios
